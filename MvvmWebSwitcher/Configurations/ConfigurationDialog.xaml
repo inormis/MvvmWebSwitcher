@@ -1,0 +1,82 @@
+﻿<platformUi:DialogWindow x:Class="WebSwitcher.Configurations.ConfigurationDialog"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                         xmlns:platformUi="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0"
+                         xmlns:core="clr-namespace:WebSwitcher.Configurations.Core"
+                         xmlns:viewModels="clr-namespace:WebSwitcher.Configurations"
+                         mc:Ignorable="d"
+                         Title="WebSwitcher Configuration"
+                         Width="400"
+                         Height="300"
+                         d:DataContext="{d:DesignInstance {x:Type viewModels:ConfigurationViewModel}}"
+                         core:DialogCloser.DialogResult="{Binding Path=DialogResult}"
+                         d:DesignHeight="300" d:DesignWidth="300">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Margin" Value="2" />
+                <Style.Triggers>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.7" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="2" />
+            </Style>
+            <Style TargetType="{x:Type RadioButton}">
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="0,5,5,5" />
+                <Setter Property="MinWidth" Value="75" />
+                <Setter Property="Height" Value="24" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Position" VerticalAlignment="Center" />
+            <RadioButton IsChecked="{Binding Path=IsTopPosition, Mode=TwoWay}" Content="Top" />
+            <RadioButton IsChecked="{Binding Path=IsBottomPosition, Mode=TwoWay}" Content="Bottom" Margin="5,0,0,0" />
+        </StackPanel>
+        <GroupBox Grid.Row="1">
+            <GroupBox.Header>
+                <TextBlock Text="Root paths" />
+            </GroupBox.Header>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="CSS" />
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="TS" />
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Html" />
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="C#" />
+
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Css}" />
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=TS}" />
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=Html}" />
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=CSharp}" />
+            </Grid>
+        </GroupBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right" Margin="5,10,5,5">
+            <Button Content="Save" Command="{Binding Path=ApplyCommand}" />
+            <Button Content="Cancel" Command="{Binding Path=CancelCommand}" />
+        </StackPanel>
+    </Grid>
+</platformUi:DialogWindow>
