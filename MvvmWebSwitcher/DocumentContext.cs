@@ -16,6 +16,8 @@ namespace MvvmWebSwitcher {
             _globalContext = globalContext;
             TextView = textView;
             DocumentPath = textView.GetPath();
+            _configuration = ConfigurationRepository.Instance.Configuration;
+
             Document = globalContext.GetDocumentFromPath(DocumentPath);
             SwitchButtons = new SwitchButton[] {
                 new CSharpSwitchButton(this),
@@ -29,8 +31,8 @@ namespace MvvmWebSwitcher {
             }
 
             globalContext.RegisterDcoument(this);
-            _configuration = ConfigurationRepository.Instance.Configuration;
             _configuration.Changed += UpdateState;
+            UpdateState();
         }
 
         public bool IsEnabled { get; private set; }

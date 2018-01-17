@@ -54,7 +54,8 @@ namespace MvvmWebSwitcher.IconFiles {
             return new Image {
                 Source = CreateImageSource("Warning.png"),
                 Width = 16,
-                Height = 16
+                Height = 16,
+                Visibility = Visibility.Collapsed
             };
         }
 
@@ -165,12 +166,14 @@ namespace MvvmWebSwitcher.IconFiles {
             var switchContext = GetSwitchContextOrNull();
 
             if (File.Exists(switchContext.FilePath)) {
-                Warning.Visibility = Visibility.Collapsed;
+                if(_warning.IsValueCreated)
+                    _warning.Value.Visibility = Visibility.Collapsed;
                 Image.ToolTip = null;
             }
             else {
                 Warning.Visibility = Visibility.Visible;
-                Image.ToolTip = $"File doesn\'t exist: \'{switchContext.FilePath}\'\r\nClick to create file";
+                Image.ToolTip = $@"File doesn\'t exist: \'{switchContext.FilePath}\'
+Click to create file";
             }
 
             Image.Opacity = Equals(Context.CurrentSwitchButton) ? ActiveOpacity : InactiveOpacity;
