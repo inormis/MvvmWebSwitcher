@@ -56,7 +56,7 @@
         <Parent guid="guidWebSwitcherConfigureCommandPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>WebSwitcher Configuration</ButtonText>
+          <ButtonText>MvvmWebSwitcher Configuration</ButtonText>
         </Strings>
       </Button>
     </Buttons>

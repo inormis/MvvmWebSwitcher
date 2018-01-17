@@ -2,11 +2,11 @@
 using System.Linq;
 using EnvDTE;
 using Microsoft.VisualStudio.Text.Editor;
-using WebSwitcher.Configurations;
-using WebSwitcher.IconFiles;
-using WebSwitcher.VSExtensionTools;
+using MvvmWebSwitcher.Configurations;
+using MvvmWebSwitcher.IconFiles;
+using MvvmWebSwitcher.VSExtensionTools;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     public class DocumentContext : IDocumentContext {
         private readonly GlobalContext _globalContext;
 

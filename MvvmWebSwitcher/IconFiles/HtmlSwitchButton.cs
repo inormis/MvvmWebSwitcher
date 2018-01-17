@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using WebSwitcher.Configurations;
+using MvvmWebSwitcher.Configurations;
 
-namespace WebSwitcher.IconFiles {
+namespace MvvmWebSwitcher.IconFiles {
     public class HtmlSwitchButton : SwitchButton {
         public HtmlSwitchButton(IDocumentContext context) : base(context, "Html.jpg") { }
 

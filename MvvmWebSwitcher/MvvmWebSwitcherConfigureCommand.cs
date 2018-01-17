@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.Design;
 using Microsoft.VisualStudio.Shell;
-using WebSwitcher.Configurations;
+using MvvmWebSwitcher.Configurations;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     /// <summary>
     ///     Command handler
     /// </summary>

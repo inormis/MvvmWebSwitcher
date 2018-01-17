@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.TextManager.Interop;
 
-namespace WebSwitcher.VSExtensionTools {
+namespace MvvmWebSwitcher.VSExtensionTools {
     public static class Extensions {
         public static string GetPath(this IWpfTextView textView) {
             textView.TextBuffer.Properties.TryGetProperty(typeof(IVsTextBuffer), out IVsTextBuffer bufferAdapter);

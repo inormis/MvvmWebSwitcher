@@ -5,7 +5,7 @@ using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace WebSwitcher.VSExtensionTools {
+namespace MvvmWebSwitcher.VSExtensionTools {
     public static class ExtensionService {
         private static readonly Lazy<IVsSolution> _vsSolution = new Lazy<IVsSolution>(GetService<IVsSolution>);
 

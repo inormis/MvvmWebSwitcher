@@ -2,8 +2,8 @@
 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="WebSwitcher.ef660683-a8cb-4e50-b2cf-4565e1e471f1" Version="1.0" Language="en-US" Publisher="Artiom K." />
-        <DisplayName>WebSwitcher</DisplayName>
+        <Identity Id="MvvmWebSwitcher.ef660683-a8cb-4e50-b2cf-4565e1e471f1" Version="1.0" Language="en-US" Publisher="Artiom K." />
+        <DisplayName>MvvmWebSwitcher</DisplayName>
         <Description xml:space="preserve">An extension allows to switch documents quickly between Controller, ViewModel, CSS, and View (CSHTML) when developing a web application</Description>
         <PreviewImage>Icons\CSharp.jpg</PreviewImage>
     </Metadata>

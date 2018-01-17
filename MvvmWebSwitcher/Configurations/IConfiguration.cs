@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebSwitcher.Configurations {
+namespace MvvmWebSwitcher.Configurations {
     public interface IConfiguration {
         string CssRootPath { get; }
 

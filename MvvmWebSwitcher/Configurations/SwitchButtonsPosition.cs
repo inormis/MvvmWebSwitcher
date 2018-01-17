@@ -1,4 +1,4 @@
-﻿namespace WebSwitcher.Configurations {
+﻿namespace MvvmWebSwitcher.Configurations {
     public enum SwitchButtonsPosition {
         Top = 1,
 

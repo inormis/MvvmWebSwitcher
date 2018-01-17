@@ -1,9 +1,9 @@
 ﻿using System.IO;
+using MvvmWebSwitcher.VSExtensionTools;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using WebSwitcher.VSExtensionTools;
 
-namespace WebSwitcher.Configurations {
+namespace MvvmWebSwitcher.Configurations {
     public class ConfigurationRepository {
         private const string ConfiguationFileName = "webstwitcher.config";
 

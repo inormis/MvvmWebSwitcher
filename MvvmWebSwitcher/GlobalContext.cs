@@ -8,11 +8,11 @@ using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.Text.Editor;
-using WebSwitcher.IconFiles;
-using WebSwitcher.VSExtensionTools;
+using MvvmWebSwitcher.IconFiles;
+using MvvmWebSwitcher.VSExtensionTools;
 using Window = EnvDTE.Window;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     public class GlobalContext {
         private readonly DTE2 _application;
 

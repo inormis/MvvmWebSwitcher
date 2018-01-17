@@ -1,7 +1,7 @@
 ﻿using System.Windows.Input;
-using WebSwitcher.Configurations.Core;
+using MvvmWebSwitcher.Configurations.Core;
 
-namespace WebSwitcher.Configurations {
+namespace MvvmWebSwitcher.Configurations {
     public class ConfigurationViewModel : ViewModelBase {
         private readonly IConfiguration _configuration;
 

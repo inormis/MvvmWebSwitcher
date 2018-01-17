@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebSwitcher.Configurations {
+namespace MvvmWebSwitcher.Configurations {
     public class Configuration : IConfiguration {
         private string _cSharpPath;
 

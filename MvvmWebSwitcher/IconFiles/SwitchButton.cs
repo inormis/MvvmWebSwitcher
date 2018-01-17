@@ -6,9 +6,9 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using WebSwitcher.Configurations;
+using MvvmWebSwitcher.Configurations;
 
-namespace WebSwitcher.IconFiles {
+namespace MvvmWebSwitcher.IconFiles {
     public abstract class SwitchButton : IDisposable {
         public const int ImageSize = 48;
 
@@ -125,7 +125,7 @@ namespace WebSwitcher.IconFiles {
         }
 
         private static ImageSource CreateImageSource(string fileName) {
-            var uriSource = new Uri($"pack://application:,,,/WebSwitcher;component/Icons/{fileName}");
+            var uriSource = new Uri($"pack://application:,,,/MvvmWebSwitcher;component/Icons/{fileName}");
             var bitmapImage = new BitmapImage(uriSource);
             return bitmapImage;
         }

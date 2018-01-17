@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace WebSwitcher.Configurations.Core {
+namespace MvvmWebSwitcher.Configurations.Core {
     public class RelayCommand : ICommand {
         private readonly Func<bool> canExecuteEvaluator;
 

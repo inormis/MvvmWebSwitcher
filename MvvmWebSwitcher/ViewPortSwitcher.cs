@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Windows.Controls;
 using Microsoft.VisualStudio.Text.Editor;
-using WebSwitcher.Configurations;
-using WebSwitcher.IconFiles;
+using MvvmWebSwitcher.Configurations;
+using MvvmWebSwitcher.IconFiles;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     internal sealed class ViewPortSwitcher {
         /// <summary>
         ///     Distance from the viewport right to the right end of the square box.

@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace WebSwitcher.Configurations.Core {
+namespace MvvmWebSwitcher.Configurations.Core {
     public abstract class ViewModelBase : INotifyPropertyChanged {
         public event PropertyChangedEventHandler PropertyChanged;
 

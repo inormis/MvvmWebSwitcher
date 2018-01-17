@@ -23,8 +23,8 @@
     <ProjectGuid>{50307672-695B-45E0-82E7-B2CA5C70FBAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebSwitcher</RootNamespace>
-    <AssemblyName>WebSwitcher</AssemblyName>
+    <RootNamespace>MvvmWebSwitcher</RootNamespace>
+    <AssemblyName>MvvmWebSwitcher</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>

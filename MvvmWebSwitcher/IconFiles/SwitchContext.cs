@@ -1,4 +1,4 @@
-﻿namespace WebSwitcher.IconFiles {
+﻿namespace MvvmWebSwitcher.IconFiles {
     public class SwitchContext {
         public SwitchContext(string filePath, FilePattern pattern = null) {
             FilePath = filePath;

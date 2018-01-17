@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.LanguageServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     public class FilePattern {
         public FilePattern(string action, string controller, string module, string rootDirectory, string filePath) {
             Action = string.IsNullOrWhiteSpace(action) ? "Index" : action;

@@ -1,8 +1,8 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.Text.Editor;
-using WebSwitcher.IconFiles;
+using MvvmWebSwitcher.IconFiles;
 
-namespace WebSwitcher {
+namespace MvvmWebSwitcher {
     public interface IDocumentContext {
         string DocumentPath { get; }
 

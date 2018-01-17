@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using EnvDTE;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
 using Microsoft.VisualStudio.Text.Editor;
-using WebSwitcher.Configurations;
+using MvvmWebSwitcher.Configurations;
 
-namespace WebSwitcher.IconFiles {
+namespace MvvmWebSwitcher.IconFiles {
     public class CSharpSwitchButton : SwitchButton {
         private MethodDeclarationSyntax _lastActiveAction;
 
