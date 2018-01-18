@@ -91,13 +91,24 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Screenshot_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="switch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <VSCTCompile Include="WebSwitcherConfigureCommandPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
     <Resource Include="Icons\CSS.jpg" />
     <Resource Include="Icons\Warning.png" />
     <Content Include="index.html" />
-    <Resource Include="Icons\CSharp.jpg" />
+    <Resource Include="Icons\CSharp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Resource>
     <Resource Include="Icons\HTML.jpg" />
     <Resource Include="Icons\TS.jpg" />
     <Content Include="Resources\WebSwitcherConfigureCommand.png" />
